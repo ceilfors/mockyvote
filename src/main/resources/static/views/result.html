@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+        <div ng-repeat="constituency in constituencies">
+            <div ng-if="$index % 2 == 0" class="clearfix"></div>
+            <div class="col-md-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">{{constituency.name}}</div>
+
+                    <table class="table">
+                        <tr>
+                            <td>Not voting</td>
+                            <td>{{constituency.notVoting}}</td>
+                        </tr>
+                        <tr ng-repeat="candidate in constituency.candidates">
+                            <td>{{candidate.name}}</td>
+                            <td>{{candidate.vote}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
