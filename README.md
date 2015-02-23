@@ -4,7 +4,7 @@ This is a shameless demo web application repository for my failed job applicatio
 
 Running this app
 ----------------
-1. Pre requisite: JDK 1.8 (The REST services I'm using is still up which is YourNextMP and MapIt)
+1. Pre requisite: JDK 1.8 + The REST services I'm using is still up i.e. YourNextMP and MapIt
 2. Set JDK to JAVA_HOME
 3. Run ./gradlew run
 4. Launch localhost:8080 at Chrome (the only browser I tested)
